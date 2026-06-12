@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SIAMPADH - Aide et accompagnement à domicile</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a href="#accueil" class="brand"><img src="assets/images/logo.png" alt="Logo SIAMPADH"></a>
+    <button id="mobileToggle" class="mobile-toggle">☰</button>
+    <nav id="mainNav">
+      <a href="#accueil">Accueil</a>
+      <a href="#services">Services</a>
+      <a href="#menus">Menus</a>
+      <a href="#actualites">Actualités</a>
+      <a href="#livret">Livret d’accueil</a>
+      <a href="#contact">Contact</a>
+      <button id="openTeamNav" class="nav-team-button" type="button">👥 Notre équipe</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="accueil" class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Association Essaim Gâtinais · SIAMPADH</p>
+        <h1>Aide et accompagnement à domicile</h1>
+        <p>Un service humain, local et personnalisé pour favoriser le maintien à domicile des personnes âgées, des personnes en situation de handicap et des personnes fragilisées.</p>
+        <div class="actions">
+          <a class="btn primary" href="#contact">Contacter le SIAMPADH</a>
+          <a class="btn secondary" href="#menus">Voir les menus</a>
+          <a class="btn secondary" href="#actualites">Voir les actualités</a>
+          <a class="btn secondary" href="#livret">Voir le livret d’accueil</a>
+          <button class="btn team" id="openTeamHero" type="button">👥 Découvrir notre équipe</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="section-head">
+        <p class="eyebrow">Nos services</p>
+        <h2>Le SIAMPADH, ce n’est pas seulement le portage de repas</h2>
+        <p>Nous accompagnons les bénéficiaires dans les actes de la vie quotidienne, le maintien de l’autonomie et le lien social.</p>
+      </div>
+      <div class="cards">
+        <article><span>🌅</span><h3>Aide au lever et au coucher</h3><p>Accompagnement sécurisant au quotidien.</p></article>
+        <article><span>🚿</span><h3>Aide à la toilette et à l’habillage</h3><p>Respect de la dignité, de l’intimité et des habitudes de vie.</p></article>
+        <article><span>🍲</span><h3>Aide et préparation des repas</h3><p>Soutien autour du repas selon les besoins.</p></article>
+        <article><span>🏠</span><h3>Entretien du domicile</h3><p>Travaux ménagers, linge et repassage.</p></article>
+        <article><span>🛒</span><h3>Courses et accompagnements</h3><p>Courses, rendez-vous, promenades et sorties.</p></article>
+        <article><span>🤝</span><h3>Lien social et animations</h3><p>Présence, écoute, activités, mémoire et stimulation.</p></article>
+        <article><span>🌙</span><h3>Gardes de jour</h3><p>Prestations ponctuelles ou programmées.</p></article>
+        <article><span>🍽️</span><h3>Portage de repas</h3><p>Livraison de repas à domicile 7 jours sur 7.</p></article>
+      </div>
+    </section>
+
+    <section id="equipe" class="section equipe-section">
+      <div class="equipe-preview">
+        <div>
+          <p class="eyebrow">Notre équipe</p>
+          <h2>Découvrez les personnes qui font vivre le SIAMPADH</h2>
+          <p>Intervenantes à domicile, bureau, direction, responsable de secteur et président : une équipe organisée autour du maintien à domicile.</p>
+        </div>
+        <div class="equipe-actions">
+        </div>
+      </div>
+
+      <div class="team-public-page" id="teamInlinePublic" aria-label="Présentation visible de l’équipe"></div>
+    </section>
+
+    <section id="menus" class="section menus-section">
+      <div class="section-head">
+        <p class="eyebrow">Portage de repas</p>
+        <h2>Menus visibles en une seule fois</h2>
+        <p>Choisissez un type de menu : les 7 jours de la semaine s’affichent côte à côte, sans devoir descendre dans un PDF.</p>
+      </div>
+
+      <div class="menu-controls">
+        <div id="menuTabs" class="tabs"></div>
+        <select id="weekSelect" class="week-select" aria-label="Choisir une semaine"></select>
+      </div>
+
+      <div class="calendar-wrap">
+        <div class="calendar-head">
+          <div>
+            <p class="small">Menu sélectionné</p>
+            <h3 id="menuTitle">Menu</h3>
+          </div>
+          <div class="pdf-links">
+            <a id="downloadPdf" class="mini-btn" download>Télécharger le PDF</a>
+            <a id="openPdf" class="mini-btn dark" target="_blank">Ouvrir le PDF complet</a>
+          </div>
+        </div>
+        <div id="weeklyCalendar" class="weekly-calendar"></div>
+      </div>
+
+    </section>
+
+
+    <section id="actualites" class="section news-section">
+      <div class="section-head">
+        <p class="eyebrow">Actualités</p>
+        <h2>La vie du SIAMPADH</h2>
+        <p>Retrouvez ici les événements, informations et moments importants de l’association. Les actualités sont visibles par tous.</p>
+      </div>
+
+      <div id="newsPublicList" class="news-grid" aria-label="Liste des actualités"></div>
+
+    </section>
+
+    <section id="livret" class="section livret-section">
+      <div class="section-head">
+        <p class="eyebrow">Livret d’accueil</p>
+        <h2>Consulter et écouter le livret d’accueil</h2>
+        <p>Le livret présente le SIAMPADH, son fonctionnement, ses prestations, ses engagements et les informations utiles pour les bénéficiaires et leurs familles.</p>
+      </div>
+
+      <div class="livret-card">
+        <div class="livret-toolbar" aria-label="Actions du livret d’accueil">
+          <a class="mini-btn dark" href="assets/livret/livret-accueil-siampadh.pdf" target="_blank">Ouvrir le livret</a>
+          <a class="mini-btn" href="assets/livret/livret-accueil-siampadh.pdf" download>Télécharger le PDF</a>
+          <button class="mini-btn listen" id="listenLivret" type="button">🔊 Écouter</button>
+          <button class="mini-btn" id="pauseLivret" type="button">⏸ Pause</button>
+          <button class="mini-btn" id="resumeLivret" type="button">▶ Reprendre</button>
+          <button class="mini-btn stop" id="stopLivret" type="button">⏹ Stop</button>
+        </div>
+        <p class="livret-help" id="livretStatus">Astuce : cliquez sur « Écouter » pour lancer la lecture audio du livret avec la voix de votre navigateur.</p>
+        <iframe class="livret-frame" src="assets/livret/livret-accueil-siampadh.pdf#toolbar=1&navpanes=0&view=FitH" title="Livret d’accueil SIAMPADH"></iframe>
+      </div>
+    </section>
+
+
+    <section id="contact" class="section contact-section">
+      <div class="contact-card">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Contacter le SIAMPADH depuis le site</h2>
+          <p>Le formulaire ouvre automatiquement votre messagerie avec le message prêt à envoyer.</p>
+          <div class="contact-info">
+            <p>📍 41-43, Avenue de Fontainebleau<br>77760 La Chapelle-La-Reine</p>
+            <p>☎️ <a href="tel:0160969290">01.60.96.92.90</a></p>
+            <p>📱 Astreinte : <a href="tel:0660421655">06.60.42.16.55</a></p>
+            <p>✉️ <a href="mailto:siampadh77@essaimgatinais.asso.fr">siampadh77@essaimgatinais.asso.fr</a></p>
+            <p>🕘 Du lundi au vendredi : 9h-13h / 14h-17h</p>
+          </div>
+        </div>
+        <form id="contactForm" class="contact-form">
+          <label>Nom et prénom<input id="contactName" required placeholder="Votre nom"></label>
+          <label>Téléphone<input id="contactPhone" placeholder="Votre téléphone"></label>
+          <label>E-mail<input id="contactEmail" type="email" placeholder="Votre e-mail"></label>
+          <label>Votre demande<select id="contactSubject"><option>Demande d’information</option><option>Aide à domicile</option><option>Portage de repas</option><option>Demande de rappel</option></select></label>
+          <label>Message<textarea id="contactMessage" required rows="6" placeholder="Écrivez votre message ici..."></textarea></label>
+          <button class="btn primary" type="submit">Envoyer la demande</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div class="team-modal" id="teamModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="teamTitle">
+    <div class="team-backdrop" data-close-team></div>
+    <div class="team-window">
+      <button class="team-close" type="button" data-close-team aria-label="Fermer">×</button>
+      <div class="team-head">
+        <p class="eyebrow">SIAMPADH</p>
+        <h2 id="teamTitle">Notre équipe</h2>
+        <p>Une présentation simple pour expliquer le rôle de chacun auprès des bénéficiaires et des familles.</p>
+      </div>
+
+      <div id="teamPublicContent"></div>
+    </div>
+  </div>
+
+  <script src="menu-week-data.js"></script>
+  <script src="equipe-data.js"></script>
+  <script src="actualites-data.js"></script>
+  <script src="livret-text.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
