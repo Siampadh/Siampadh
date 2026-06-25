@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://siampadh.github.io/Siampadh/sitemap.xml
